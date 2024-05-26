@@ -14,6 +14,8 @@
 
     <title>Frontend Mentor | Intro component with sign up form</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./responsive1.css">
+    <link rel="stylesheet" href="responsive2.css">
     <script src="./app.js" defer></script>
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
@@ -32,6 +34,7 @@
         <form action="" id="form">
           <label for="firstName">
             <input type="text" class="firstName" placeholder="First Name" />
+            <!-- <p class="error-container"><img src="./images/icon-error.svg" alt=""><br><p class="error-text">name cannot be empty</p></p> -->
           </label>
           <label for="lastName">
             <input type="text" class="lastName" placeholder="Last Name" />
@@ -41,12 +44,13 @@
           </label>
           <label for="password">
             <input type="password" class="password" placeholder="Password" />
+            <img src="./images/eye-solid.svg" alt="" class="password-toggle">
           </label>
           <button id="button">Claim your free trial</button>
           <small
             >By clicking the button, you are agreeing to our
-            <span> Terms and Services</span></small
-          >
+            <span> Terms and Services</span>
+          </small>
         </form>
       </div>
     </main>
